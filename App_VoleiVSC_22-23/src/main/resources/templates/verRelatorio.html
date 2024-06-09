@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ver Relatórios</title>
+    <link rel="stylesheet" href="../css/verRelatorio.css">
+</head>
+
+<body>
+<header>
+    <div class="lado-esquerdo">
+        <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+    </div>
+</header>
+<div class="corpo-central">
+    <h1>Relatórios</h1>
+    <form action="/relatorio/verrelatorio" method="post"></form>
+    <table>
+        <thead>
+        <tr>
+            <th class="tabela">Nº</th>
+            <th class="tabela">Nome</th>
+            <th class="tabela">Data de Upload</th>
+            <th class="tabela">Download</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="arquivo : ${arquivos}">
+            <td class="tabela" th:text="${arquivo.id}"></td>
+            <td class="tabela" th:text="${arquivo.nome}"></td>
+            <td class="tabela" th:text="${arquivo.dataUpload}"></td>
+            <td>
+                <a class="tabela" th:href="@{'/download/' + ${arquivo.id}}" download>
+                    <button>Download</button>
+                </a>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/relatorio">
+        <button>Sair</button>
+    </a>
+<footer>
+    <div class="rodape">
+        <p>
+
+        </p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

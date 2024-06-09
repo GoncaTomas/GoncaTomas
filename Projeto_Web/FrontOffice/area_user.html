@@ -1,0 +1,959 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-area {
+            background: #f8f9fa;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .header-bottom {
+            padding: 15px 0;
+        }
+        .logo img {
+            max-width: 100px;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .main-menu ul li {
+            margin-right: 20px;
+        }
+        .main-menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .user-profile, .profile-details {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .user-profile {
+            max-width: 300px;
+            text-align: center;
+        }
+        .profile-details {
+            max-width: 800px;
+        }
+        .profile-details div {
+            margin-bottom: 10px;
+        }
+        .profile-details label {
+            font-weight: bold;
+        }
+        .profile-details input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .profile-details .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .pagination-link{
+            cursor: pointer; 
+        }
+        .pagination-link:active {
+            background-color: #f0f0f0; 
+            color: #333; 
+        }
+
+        .donations-container {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .donations-container h3 {
+            font-size: 24px;
+            color: #008000;
+            margin-bottom: 15px;
+        }
+
+        .donations-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .donations-table th, .donations-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .donations-table th {
+            background-color: #f2f2f2;
+            color: #008000; 
+        }
+
+        .donations-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+
+        .donations-table tbody tr:hover {
+            background-color: #e6ffe6; /
+        }
+
+        .pagination {
+            margin-top: 20px;
+        }
+
+        .pagination a {
+            color: #008000; 
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #f2f2f2; 
+        }
+
+        .toggle-buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px; 
+        }
+
+        .toggle-button {
+        color: black;
+        border: 1px solid green; 
+        background-color: #f2f2f2;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+
+        .toggle-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .toggle-button:active {
+            background-color: #d9d9d9;
+        }
+
+        .nivel-apoio {
+         font-weight: bold;
+        }
+
+        .bronze {
+            color: orange;
+        }
+
+        .prata {
+            color: silver;
+        }
+
+        .ouro {
+            color: gold;
+        }
+
+        #eventFormContainer {
+            display: none;
+        }
+        
+</style>
+
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/main_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/main_logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.html">Página Inicial</a></li>
+                                                <li><a href="about.html">Sobre nós</a></li>
+                                                <li><a href="what-do.html">O Que Fazemos</a></li>
+                                                <li><a href="projects.html">Projetos</a></li>
+                                                <li><a href="blog.html">Blog</a>                                                
+                                                <li><a href="pagina_doacoes.html">Doações</a></li>                                                
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+       
+        <!--? Profile Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="blog_right_sidebar">
+                            <div class="profile-container">
+                                <div class="user-profile text-center">
+                                    <h2>O MEU PERFIL</h2>
+                                    <img src="assets/img/gallery/icon_perfil.png" alt="Profile Picture" style="width: 100px; height: auto;">
+                                    <h3 id="titleName"></h3>
+                                    <p id="nivelApoiante" class="nivel-apoio">Apoiante nível gold</p>
+                                </div>
+                                <div class="profile-details" style="text-align: left;">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <label for="name">Nome:</label>
+                                        <input type="text" id="name" value="Exemplo Exemplo" readonly>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column;">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" value="exemplo@example.com" readonly>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column;">
+                                        <label for="address">Morada:</label>
+                                        <input type="text" id="address" value="Rua Exemplo, 123" readonly>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column;">
+                                        <label for="phone">Telemóvel:</label>
+                                        <input type="text" id="phone" value="912345678" readonly>
+                                    </div>
+                                    <a href="alterar_dados.html" id="edit-button" class="btn">Editar Dados</a>
+                                    <a href="login.html" id="logout" class="btn">Terminar Sessão</a>
+                                </div>
+                            </div>
+                            <div class="donations-container">
+                                <div class="toggle-buttons-container">
+                                    <button id="toggle-donations" class="toggle-button">
+                                        <i class="fas fa-euro-sign"></i> Mostrar Doações
+                                    </button>
+                                    <button id="calendar-button" class="toggle-button">
+                                        <i class="fas fa-calendar-alt"></i> Calendário
+                                    </button>                                  
+                                    <button id="event-button" class="toggle-button">
+                                        <i class="fas fa-plus-circle"></i> Propor Evento
+                                    </button>
+                                </div>
+                                <div id="eventFormContainer" style="display: none;">
+                                    <div class="card card-primary">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Propor Evento</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <form id="eventForm">
+                                                <div class="form-group">
+                                                    <label for="inputName">Nome Projeto</label>
+                                                    <input type="text" id="inputName" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputDescription">Descrição</label>
+                                                    <textarea id="inputDescription" class="form-control" rows="4" required></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputStatus">Status</label>
+                                                    <select id="inputStatus" class="form-control custom-select" required>
+                                                        <option selected disabled>Escolha um</option>
+                                                        <option value="Pendente">Pendente</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputDate">Data</label>
+                                                    <input type="date" id="inputDate" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputParticipants">Limite Participantes</label>
+                                                    <input type="number" id="inputParticipants" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputDuration">Duração do Projeto</label>
+                                                    <input type="number" id="inputDuration" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputLocation">Localização</label>
+                                                    <input type="text" id="inputLocation" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputImage">Imagem</label>
+                                                    <input type="file" id="inputImage" class="form-control" accept="image/*" required>
+                                                </div>
+                                                <button type="submit" class="btn btn-success">Criar Projeto</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="donations-content" style="display: none;">
+                                    <h3>A MINHAS DOAÇÕES</h3>
+                                    <table class="donations-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Doação</th>
+                                                <th>Valor</th>
+                                                <th>Projeto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="donations-tbody">
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination">
+                                        <a id="previous-page" class="pagination-link">&laquo; Anterior</a>
+                                        <a id="next-page" class="pagination-link">Próximo &raquo;</a>
+                                    </div>
+                                    <div id="calendar-container" style="display: none;">
+                                        <div class="col-md-9">
+                                            <div class="card card-primary">
+                                                <div class="card-body p-0">
+                                                    <!-- O CALENDÁRIO SERÁ RENDERIZADO AQUI -->
+                                                    <div id="calendar"></div>
+                                                </div>
+                                                <!-- /.card-body -->
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                    </div>                        
+                                </div>
+                            </div>                                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+           <div class="footer-area footer-padding">
+               <div class="container ">
+                   <div class="row justify-content-between">
+                       <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
+                           <div class="single-footer-caption mb-50">
+                               <div class="single-footer-caption mb-30">
+                                   <!-- logo -->
+                                   <div class="footer-logo mb-35">
+                                       <a href="index.html"><img src="assets/img/logo/main_logo.png" alt=""></a>
+                                   </div>
+                                   <div class="footer-tittle">
+                                       <div class="footer-pera">
+                                           <p>A Mudança no Planeta Começa Hoje!</p>
+                                       </div>
+                                   </div>
+                                   <!-- social -->
+                                   
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Meio Ambiente</h4>
+                                   <ul>
+                                       <li><a href="index.html">Página Inicial</a></li>
+                                       <li><a href="about.html">Sobre-Nós</a></li>
+                                       <li><a href="what-do.html">O Que Fazemos</a></li>
+                                       <li><a href="projects.html">Projetos</a></li>
+                                       <li><a href="blog.html">Blog</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Contacte-nos</h4>
+                                   <ul>
+                                       <li><a href="#">planetavivo@gmail.com</a></li>
+                                       <li><a href="#">Guimarães, Portugal</a></li>
+                                       
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- footer-bottom area -->
+           <div class="footer-bottom-area">
+               <div class="container">
+                   <div class="footer-border">
+                       <div class="row d-flex align-items-center">
+                           <div class="col-xl-12 ">
+                               <div class="footer-copy-right text-center">
+                                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../dist/js/adminlte.min.js"></script>
+    <script src="../plugins/moment/moment.min.js"></script>
+    <script src="../plugins/fullcalendar/main.min.js"></script>
+    <script src="../dist/js/demo.js"></script>
+
+    <script>
+
+document.getElementById('calendar-button').addEventListener('click', function() {
+            window.location.href = 'calendario.html';
+        });
+        
+       $(function () {
+    // Função para carregar eventos do armazenamento local
+    function loadEvents() {
+        let events = localStorage.getItem('events');
+        if (events) {
+            return JSON.parse(events).map(event => ({
+                title: event.name,
+                start: event.date
+            }));
+        }
+        return [];
+    }
+
+    // Função para salvar eventos no armazenamento local
+    function saveEvents(events) {
+        const eventsToSave = events.map(event => ({
+            name: event.title,
+            date: event.start
+        }));
+        localStorage.setItem('events', JSON.stringify(eventsToSave));
+    }
+
+    // Função para adicionar um evento ao calendário e ao armazenamento local
+    function addEvent(event) {
+        let events = loadEvents();
+        events.push(event);
+        saveEvents(events);
+        calendar.addEvent(event); // Adicionar evento ao calendário
+    }
+
+
+    // Função para inicializar eventos externos
+    function ini_events(ele) {
+        ele.each(function () {
+            var eventObject = {
+                title: $.trim($(this).text()) 
+            };
+            $(this).data('eventObject', eventObject);
+            $(this).draggable({
+                zIndex: 999,
+                revert: true,
+                revertDuration: 0
+            });FullCalendar
+        });
+    }
+
+    // Inicializar o calendário
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        editable: true,
+        droppable: true,
+        events: loadEvents()
+    });
+    calendar.render();
+
+    // Mostrar o conteúdo relevante ao clicar nos botões
+    $('#toggle-donations').on('click', function() {
+        $('#eventFormContainer').hide();
+        $('#calendar-container').hide();
+        $('.donations-content').toggle();
+    });
+
+    // Adicionar manipulador de evento para mostrar o calendário
+    $('#calendar-button').on('click', function() {
+        $('#eventFormContainer').hide();
+        $('.donations-content').hide();
+        $('#calendar-container').toggle();
+        calendar.render(); // Renderizar o calendário novamente para garantir que ele seja exibido corretamente
+    });
+
+    $('#event-button').on('click', function() {
+        $('.donations-content').hide();
+        $('#calendar-container').hide();
+        $('#eventFormContainer').toggle();
+    });
+
+
+    // Carregar os detalhes do usuário
+    const userDetails = {
+        name: "Gonçalo Tomás",
+        email: "goncalo@example.com",
+        address: "Rua Exemplo, 123",
+        phone: "912345678",
+        nivel: "Apoiante nível gold"
+    };
+
+    $('#titleName').text(userDetails.name);
+    $('#nivelApoiante').text(userDetails.nivel);
+    $('#name').val(userDetails.name);
+    $('#email').val(userDetails.email);
+    $('#address').val(userDetails.address);
+    $('#phone').val(userDetails.phone);
+
+    // Exemplo de doações para mostrar na tabela
+    const donations = [
+        { donation: "Doação 1", amount: "€50", project: "Projeto A" },
+        { donation: "Doação 2", amount: "€30", project: "Projeto B" },
+        { donation: "Doação 3", amount: "€20", project: "Projeto C" },
+    ];
+
+    let currentPage = 1;
+    const rowsPerPage = 2;
+
+    // Função para exibir a tabela de doações
+    function displayDonationsTable(page) {
+        const tbody = $('#donations-tbody');
+        tbody.empty();
+
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+
+        const paginatedDonations = donations.slice(start, end);
+
+        paginatedDonations.forEach(donation => {
+            tbody.append(`
+                <tr>
+                    <td>${donation.donation}</td>
+                    <td>${donation.amount}</td>
+                    <td>${donation.project}</td>
+                </tr>
+            `);
+        });
+
+        $('#previous-page').toggle(page > 1);
+        $('#next-page').toggle(end < donations.length);
+    }
+
+    // Manipulador de evento para a página anterior
+    $('#previous-page').on('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            displayDonationsTable(currentPage);
+        }
+    });
+
+    // Manipulador de evento para a próxima página
+    $('#next-page').on('click', function() {
+        if ((currentPage * rowsPerPage) < donations.length) {
+            currentPage++;
+            displayDonationsTable(currentPage);
+        }
+    });
+
+    // Exibir a tabela de doações na página inicial
+    displayDonationsTable(currentPage);
+});
+
+
+    //código para inserir os novos valores na página principal
+    document.addEventListener('DOMContentLoaded', function() {
+    // Obter o email do usuário logado do localStorage
+    const loggedUser = localStorage.getItem('loggedInUser');
+
+    // Obter a lista de perfis do localStorage
+    const perfis = JSON.parse(localStorage.getItem('perfis')) || [];
+
+    // Encontrar o perfil correspondente ao usuário logado
+    let perfilEncontrado = null;
+    for (const perfil of perfis) {
+        if (perfil.email === loggedUser) {
+            perfilEncontrado = perfil;
+            break;
+        }
+    }
+
+    // Verificar se um perfil correspondente foi encontrado
+    if (perfilEncontrado) {
+        // Preencher os campos com os dados do perfil encontrado
+        document.getElementById('titleName').textContent = perfilEncontrado.nome;
+        document.getElementById('name').value = perfilEncontrado.nome;
+        document.getElementById('email').value = perfilEncontrado.email;
+        document.getElementById('address').value = perfilEncontrado.morada;
+        document.getElementById('phone').value = perfilEncontrado.telemovel;
+    }
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obter o email que indica qual o utilizador que fez login
+    const loggedUser = localStorage.getItem('loggedInUser');
+
+    // Vai buscar os dados das doações ao localStorage
+    const doacoes = JSON.parse(localStorage.getItem('Doacoes')) || [];
+
+    // Selecionar pelo DOM o valor do documento
+    const tableBody = document.getElementById('donations-tbody');
+
+    // Definir o número de doações por página
+    const doacoesPorPagina = 5;
+
+    // Número total de páginas
+    const numPaginas = Math.ceil(doacoes.length / doacoesPorPagina);
+
+    // Função para exibir as doações de acordo com a página atual
+function displayDoacoes(paginaAtual) {
+    // Limpa o conteúdo da tabela de doações
+    tableBody.innerHTML = '';
+
+    // Zera o total de doações no início de cada exibição
+    let totalDonation = 0;
+
+    // Calcula o índice inicial e final das doações na página atual
+    const startIndex = (paginaAtual - 1) * doacoesPorPagina;
+    const endIndex = Math.min(startIndex + doacoesPorPagina, doacoes.length);
+
+    // Loop sobre as doações na página atual e adiciona à tabela
+    for (let i = startIndex; i < endIndex; i++) {
+        const doacao = doacoes[i];
+
+        // Verifica se o email associado à doação corresponde ao utilizador que fez o login
+        if (doacao.email === loggedUser) {
+            const newRow = document.createElement('tr');
+
+            const doacaoCell = document.createElement('td');
+            doacaoCell.textContent = doacao.id;
+            newRow.appendChild(doacaoCell);
+
+            const valorCell = document.createElement('td');
+            valorCell.textContent = doacao.donation + '€';
+            newRow.appendChild(valorCell);
+
+            const projetoCell = document.createElement('td');
+            projetoCell.textContent = doacao.projectList;
+            newRow.appendChild(projetoCell);
+
+            tableBody.appendChild(newRow);
+
+            totalDonation += parseInt(doacao.donation);
+        }
+    }
+
+    let nivelApoiante = '';
+    if (totalDonation > 500) {
+        nivelApoiante = 'Apoiante nível Ouro';
+        document.getElementById('nivelApoiante').classList.add('ouro');
+    } else if (totalDonation >= 250 && totalDonation <= 500) {
+        nivelApoiante = 'Apoiante nível Prata';
+        document.getElementById('nivelApoiante').classList.add('prata');
+    } else if (totalDonation > 0) {
+        nivelApoiante = 'Apoiante nível Bronze';
+        document.getElementById('nivelApoiante').classList.add('bronze');
+    }
+
+    document.getElementById('nivelApoiante').textContent = nivelApoiante;
+}
+
+
+    // Inicializa a página atual como 1
+    let paginaAtual = 1;
+
+    // Exibe as doações na página inicial
+    displayDoacoes(paginaAtual);
+
+    // Função para navegar para a página anterior
+    function goToPreviousPage() {
+        paginaAtual--;
+        if (paginaAtual < 1) {
+            paginaAtual = 1;
+        }
+        displayDoacoes(paginaAtual);
+    }
+
+    // Função para navegar para a próxima página
+    function goToNextPage() {
+        paginaAtual++;
+        if (paginaAtual > numPaginas) {
+            paginaAtual = numPaginas;
+        }
+        displayDoacoes(paginaAtual);
+    }
+
+    // Adiciona eventos de clique aos botões de paginação
+    document.getElementById("previous-page").addEventListener("click", goToPreviousPage);
+    document.getElementById("next-page").addEventListener("click", goToNextPage);
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggle-donations');
+    const showButton = document.getElementById('show-donations');
+    const donationsContent = document.querySelector('.donations-content');
+
+    toggleButton.addEventListener('click', function() {
+        donationsContent.style.display = (donationsContent.style.display === 'none') ? 'block' : 'none';
+    });
+
+    showButton.addEventListener('click', function() {
+        donationsContent.style.display = 'block';
+    });
+});
+
+
+//Função para alterar a cor do texto dos botões clicados
+let isGreen = false;
+const toggleButton = document.getElementById('toggle-donations');
+toggleButton.addEventListener('click', function() {
+    if (isGreen) {
+        toggleButton.style.color = 'black';
+        toggleButton.style.backgroundColor = 'transparent';
+    } else {
+        toggleButton.style.color = 'green';
+        toggleButton.style.backgroundColor = '#f2f2f2'; 
+    }
+    isGreen = !isGreen;
+    
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+            const eventButton = document.getElementById('event-button');
+            const eventFormContainer = document.getElementById('eventFormContainer');
+            const eventForm = document.getElementById('eventForm');
+            const eventsList = document.getElementById('events-ul');
+            let isEventButtonGreen = false;
+
+            const loadEvents = () => {
+                const events = JSON.parse(localStorage.getItem('events')) || [];
+                eventsList.innerHTML = '';
+                events.forEach((event, index) => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <strong>${event.name}</strong><br>
+                        ${event.description}<br>
+                        Status: ${event.status}<br>
+                        Data: ${event.date}<br>
+                        Participantes: ${event.participants}<br>
+                        Duração: ${event.duration} horas<br>
+                        Localização: ${event.location}<br>
+                        <img src="${event.image}" alt="${event.name}" style="width: 100px; height: auto;"><br>
+                        <button onclick="updateEventStatus(${index}, 'Aprovado')">Aprovar</button>
+                        <button onclick="updateEventStatus(${index}, 'Rejeitado')">Rejeitar</button>
+                    `;
+                    eventsList.appendChild(listItem);
+                });
+            };
+
+            const addEvent = (e) => {
+                e.preventDefault();
+
+                const fileInput = document.getElementById('inputImage');
+                const file = fileInput.files[0];
+
+                if (!file) {
+                    alert('Por favor, selecione uma imagem para o projeto.');
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onloadend = () => {
+                    const newEvent = {
+                        name: document.getElementById('inputName').value,
+                        description: document.getElementById('inputDescription').value,
+                        status: document.getElementById('inputStatus').value,
+                        date: document.getElementById('inputDate').value,
+                        participants: document.getElementById('inputParticipants').value,
+                        duration: document.getElementById('inputDuration').value,
+                        location: document.getElementById('inputLocation').value,
+                        image: reader.result
+                    };
+
+                    const events = JSON.parse(localStorage.getItem('events')) || [];
+                    events.push(newEvent);
+                    localStorage.setItem('events', JSON.stringify(events));
+
+                    eventForm.reset();
+                    loadEvents();
+                    eventFormContainer.style.display = 'none';
+                };
+
+                reader.readAsDataURL(file);
+            };
+
+            const updateEventStatus = (index, status) => {
+                const events = JSON.parse(localStorage.getItem('events')) || [];
+                if (events[index]) {
+                    events[index].status = status;
+                    localStorage.setItem('events', JSON.stringify(events));
+                    loadEvents();
+                }
+            };
+
+            eventButton.addEventListener('click', function() {
+                if (eventFormContainer.style.display === 'none' || eventFormContainer.style.display === '') {
+                    eventFormContainer.style.display = 'block';
+                } else {
+                    eventFormContainer.style.display = 'none';
+                }
+
+                // Alterna a cor do botão ao ser clicado
+                if (isEventButtonGreen) {
+                    eventButton.style.color = 'black';
+                    eventButton.style.backgroundColor = 'transparent';
+                } else {
+                    eventButton.style.color = 'green';
+                    eventButton.style.backgroundColor = '#f2f2f2';
+                }
+                isEventButtonGreen = !isEventButtonGreen;
+            });
+
+            eventForm.addEventListener('submit', addEvent);
+
+            loadEvents();
+
+            window.updateEventStatus = updateEventStatus;
+        });
+
+        document.getElementById('logout').addEventListener('click', function() {
+        localStorage.removeItem('loggedInUser');
+   
+    });
+
+    </script>
+    
+</body>
+</html>

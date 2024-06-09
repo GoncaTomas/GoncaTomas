@@ -1,0 +1,156 @@
+/* Forma a estrutura do header */
+header{
+  background-image: linear-gradient(45deg, rgb(248, 248, 233), white, gray, rgb(39, 38, 38));
+  border-bottom-color: darkgray;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+}
+
+.lado-esquerdo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-vitoria{
+  width: 50px;
+  margin-left: 25px;
+  margin-top: 5px;
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.logo-vitoria:hover{
+  margin-top: 80px;
+  width: 100px;
+  opacity: 0.8;
+}
+
+.logo-vitoria:active {
+  opacity: 0.5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.message-container {
+  margin-bottom: 20px;
+}
+
+.chat-message {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.chat-message span {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+div.chat-message {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+div.chat-message span.username {
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+div.botao-voltar {
+  text-align: center;
+}
+
+div.botao-voltar button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"],
+.botao-voltar button.center {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+.botao-voltar button.center:hover {
+  background-color: #555;
+}
+
+button[type="submit"]:active,
+.botao-voltar button.center:active {
+  opacity: 0.8;
+}

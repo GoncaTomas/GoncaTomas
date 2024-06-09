@@ -1,0 +1,153 @@
+header{
+            
+  background-image: linear-gradient(45deg, rgb(248, 248, 233), white, gray, rgb(39, 38, 38));
+  border-bottom-color: darkgray;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+}
+
+  /*Ordenar o simbolo do vitoria a esquerda*/
+.lado-esquerdo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-vitoria{
+  width: 50px;
+  margin-left: 25px;
+  margin-top: 5px;
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.logo-vitoria:hover{
+  margin-top: 80px;
+  width: 100px;
+  opacity: 0.8;
+
+}
+
+body {
+  align-items: center;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/pavilhao.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  margin-bottom: 500px;
+  margin-top: 50px;
+}
+
+.texto-adicionar{
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  background-image: linear-gradient(45deg, white, gray, black);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.texto{
+  font-family: 'Segoe UI', sans-serif; /* adiciona uma fonte mais moderna */
+  font-weight: bold; /* torna o texto mais forte e destacado */
+  text-shadow: 2px 2px 2px #000000; /* adiciona uma sombra ao texto para que ele se destaque mais no fundo */
+}
+
+.form-container {
+  width: 60%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-image: linear-gradient(35deg, white, gray, rgb(37, 37, 37));
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-button-cancel {
+  background-color: #f44336;
+}
+
+.form-button:hover,
+.form-button-cancel:hover {
+  opacity: 0.8;
+}
+
+
+ /* Forma a estrutura do footer*/
+ footer {
+  background-color: #3a3838;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 5px;
+}
+
+/*impede que o rodape fique estatico */
+.rodape {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+

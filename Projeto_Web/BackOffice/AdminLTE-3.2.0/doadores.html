@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planeta Vivo - Doadores</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Dashboard</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Planeta Vivo</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin Planeta Vivo</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-header">Funcionalidade BackOffice</li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Dashboards
+              </p>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendário
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/pages/voluntarios.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Voluntários
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="doadores.html" class="nav-link active">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              Doadores
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="blogs.html" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+              Blogs
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="evento.html" class="nav-link">
+              <i class="nav-icon fas fa-bell"></i>
+              <p>
+              Projetos
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Doadores</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+              <li class="breadcrumb-item active">Doadores</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Table row -->
+        <div class="row">
+          <div class="card-body">
+            <table id="example2" class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Projeto</th>
+                  <th>Montante Doado</th>
+                  <th>Eliminar</th> 
+                </tr>
+              </thead>
+              <tbody>
+             
+              </tbody>
+            </table>
+            <div id="paginationButtons" class="d-flex justify-content-center mt-3">
+              <button id="prevPageButton" class="btn btn-primary mr-2">&lt; Página Anterior</button>
+              <button id="nextPageButton" class="btn btn-primary ml-2">Próxima Página &gt;</button>
+          </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
+   
+            <!-- /.col -->
+        <!-- DONUT CHART -->
+        <div class="card card-danger">
+            <div class="card-header">
+              <h3 class="card-title">Doadores</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+
+          <!-- STACKED BAR CHART -->
+          <div class="card card-success">
+            <div class="card-header">
+              <h3 class="card-title">Doações por Projeto</h3>
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+
+    
+      
+  <!-- /.content-wrapper -->
+  
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<script>
+    $(function () {
+    const projectDonations = JSON.parse(localStorage.getItem('Doacoes')) || [];
+    const donationsByProject = {};
+    const donationsByDonor = {};
+
+    // Agrupar as doações por projeto
+    projectDonations.forEach(donation => {
+        // Por projeto
+        donation.projectList.forEach(project => {
+            if (donationsByProject.hasOwnProperty(project)) {
+                donationsByProject[project] += parseFloat(donation.donation);
+            } else {
+                donationsByProject[project] = parseFloat(donation.donation);
+            }
+        });
+
+        // Por doador
+        if (donationsByDonor.hasOwnProperty(donation.name)) {
+            donationsByDonor[donation.name] += parseInt(donation.donation);
+        } else {
+            donationsByDonor[donation.name] = parseInt(donation.donation);
+        }
+    });
+
+    // Gráfico de rosca (Doações por Doador)
+    const donorLabels = Object.keys(donationsByDonor);
+    const donorData = Object.values(donationsByDonor);
+    const donorBackgroundColors = ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'];
+
+    const donutData = {
+        labels: donorLabels,
+        datasets: [
+            {
+                data: donorData,
+                backgroundColor: donorBackgroundColors.slice(0, donorLabels.length)
+            }
+        ]
+    };
+
+    const donutOptions = {
+        maintainAspectRatio: false,
+        responsive: true
+    };
+
+    const donutChartCanvas = $('#donutChart').get(0).getContext('2d');
+    new Chart(donutChartCanvas, {
+        type: 'doughnut',
+        data: donutData,
+        options: donutOptions
+    });
+
+    // Gráfico de barras empilhadas (Doações por Projeto)
+    const projectLabels = Object.keys(donationsByProject); // Usar todos os projetos do armazenamento local
+    const projectData = Object.values(donationsByProject);
+    const projectBackgroundColors = ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'];
+
+    const barChartData = {
+        labels: projectLabels,
+        datasets: [{
+            label: 'Montante doado por projeto',
+            backgroundColor: projectBackgroundColors,
+            data: projectData
+        }]
+    };
+
+    const stackedBarChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            xAxes: [{
+                stacked: true
+            }],
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    };
+
+    const stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d');
+    new Chart(stackedBarChartCanvas, {
+        type: 'bar',
+        data: barChartData,
+        options: stackedBarChartOptions
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const doacoes = JSON.parse(localStorage.getItem('Doacoes')) || [];
+    const tableBody = document.querySelector('#example2 tbody');
+    const itemsPerPage = 10;
+    let currentPage = 1;
+
+    // Função para exibir as doações com base na página atual
+    function displayDoacoes() {
+        tableBody.innerHTML = ''; // Limpa o corpo da tabela
+
+        // Calcula os índices de início e fim das doações a serem exibidas na página atual
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const doacoesToShow = doacoes.slice(startIndex, endIndex);
+
+        doacoesToShow.forEach(function(doacao) {
+            const newRow = document.createElement('tr');
+
+            const nameCell = document.createElement('td');
+            nameCell.textContent = doacao.name;
+            newRow.appendChild(nameCell);
+
+            const emailCell = document.createElement('td');
+            emailCell.textContent = doacao.email;
+            newRow.appendChild(emailCell);
+
+            const projectCell = document.createElement('td');
+            projectCell.textContent = doacao.projectList;
+            newRow.appendChild(projectCell);
+
+            const donationCell = document.createElement('td');
+            donationCell.textContent = doacao.donation;
+            newRow.appendChild(donationCell);
+
+            const deleteCell = document.createElement('td');
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Eliminar';
+            deleteButton.className = 'btn btn-danger btn-sm btn-delete';
+            deleteButton.addEventListener('click', function() {
+
+                const id = doacao.id;
+                const updatedDoacoes = doacoes.filter(function(item) {
+                    return item.id !== id;
+                });
+                localStorage.setItem('Doacoes', JSON.stringify(updatedDoacoes));
+
+                // Remove da tabela
+                newRow.remove();
+            });
+            deleteCell.appendChild(deleteButton);
+            newRow.appendChild(deleteCell);
+
+            tableBody.appendChild(newRow);
+        });
+    }
+
+    displayDoacoes();
+
+    document.getElementById('nextPageButton').addEventListener('click', function() {
+        currentPage++;
+        displayDoacoes();
+    });
+
+    document.getElementById('prevPageButton').addEventListener('click', function() {
+        if (currentPage > 1) {
+            currentPage--;
+            displayDoacoes();
+        }
+    });
+});
+
+$(document).on('click', '.btn-delete', function() {
+    $(this).closest('tr').remove(); 
+});
+
+
+  </script>
+</body>
+</html>

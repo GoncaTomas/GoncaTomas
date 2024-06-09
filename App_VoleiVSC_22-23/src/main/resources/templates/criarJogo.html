@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Novo Jogo</title>
+  <link rel="stylesheet" href="../css/criarjogo.css">
+
+
+</head>
+<body>
+
+<header>
+  <div class="lado-esquerdo">
+      <img class="logo-vitoria" src="/images/Logo-Vitoria.png">
+  </div>
+</header>
+
+<div class="texto-adicionar">
+  <p class="texto">
+    Criar Jogo
+  </p>
+</div>
+
+<div class="formulario">
+  <form action="/jogo/criarjogo" method="post">
+    
+    <div class="input-container">
+      <label for="datahora">Data e Hora do Jogo:</label>
+      <input type="datetime-local" id="datahora" name="datahora" required><br>
+    </div>
+
+    <div>
+      <label for="local">Local do jogo:</label>
+      <input type="text" id="local" name="local" required><br>
+    </div>
+
+    <div>
+      <label for="equipaAdv">Equipa Adversária:</label>
+      <input type="text" id="equipaAdv" name="equipaAdv" required><br>
+   </div>
+
+    <div class="botao-pai">
+      <input type="submit" onclick="window.location.href='/jogo'" value="Criar Jogo">
+      <button type="button" onclick="window.location.href='/jogo'">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <div class="rodape">
+    <P>
+   
+    </P>
+  </div>
+</footer>
+
+</body>
+</html>

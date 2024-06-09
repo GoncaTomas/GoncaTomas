@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Remover Atleta</title>
+        <link rel="stylesheet" href="../css/removeratleta.css">
+    </head>
+        
+<body>
+      <header>
+        <div class="lado-esquerdo">
+          <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+        </div>
+      </header>
+
+    <div class="texto-adicionar">
+      <h1 class="texto">Remover Atleta</h1>
+    </div>
+    
+    <div class="form-container">
+      <form class="form" action="/atletas/removeratleta" method="post">
+        <div class="form-group">
+          <label class="form-label" for="id">ID do Atleta:</label>
+          <input class="form-input" type="number" id="id" name="id" required>
+        </div>
+        <div class="button-container">
+          <input class="form-button" type="submit" value="Remover Atleta">
+          <button class="form-button form-button-cancel" type="button" onclick="window.location.href='/atletas'">Cancelar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+        <div class="rodape">
+          <P>
+           
+          </P>
+        </div>
+      </footer>
+
+</body>
+</html>

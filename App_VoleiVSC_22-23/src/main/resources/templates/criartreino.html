@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+    <title>Criar Novo Treino</title>
+    <link rel="stylesheet" href="../css/criartreino.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="lado-esquerdo">
+          <img class="logo-vitoria" src="/images/Logo-Vitoria.png">
+        </div>
+    </header>
+    
+    <div class="texto-adicionar">
+        <p class="texto">
+            Criar Treino
+        </p>
+    </div>
+    
+    <div class="formulario">
+        <form action="/treino/criartreino" method="post">
+
+          <div class="input-container">
+            <label for="datahora">Data e Hora do Jogo:</label>
+            <input type="datetime-local" id="datahora" name="datahora" required><br>
+          </div>
+
+          <label class="nome_equipa" for="nome_equipa">Equipa/Escalão para Treinar:</label>
+          <input type="name" id="nome_equipa" name="nome_equipa" required><br>
+          
+          <label class="nome_treinador" for="nome_treinador">Nome do Treinador:</label>
+          <input type="name" id="nome_treinador" name="nome_treinador" required><br>
+       
+          <div class="botoes">
+            <input type="submit" value="Criar Treino">     
+            <button type="button" onclick="window.location.href='/treino'">Cancelar</button>
+          </div>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="rodape">
+          <P>
+        
+          </P>
+        </div>
+      </footer>
+
+</body>
+</html>

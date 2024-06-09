@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 130vh;
+        }
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background-image: url(./assets/img/gallery/arvoreMadeira.jpg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            background-repeat: no-repeat;
+        }
+
+
+        /* Caixa de login */
+        .login-box {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título */
+        .login-box h2 {
+            margin: 0 0 20px;
+            padding: 0;
+            color: #004d40;
+            text-align: center;
+        }
+
+        /* Estilo dos campos de input */
+        .input-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 10px 10px 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #004d40;
+            outline: none;
+            color: #004d40;
+            font-size: 16px;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #004d40;
+        }
+
+        .input-box input:focus ~ label,
+        .input-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #26a69a;
+            font-size: 12px;
+        }
+
+        /* Botão de login */
+        .btn {
+            width: 100%;
+            background: #004d40;
+            border: none;
+            padding: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background: #26a69a;
+        }
+
+        .login-box p {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-box p a {
+            color: #004d40;
+            text-decoration: none;
+        }
+
+        .login-box p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header">
+                <div class="header-bottom header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/main_logo.png" alt="Logo"></a>
+                                </div>
+                            </div>
+                            
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <div class="container">
+        <div class="login-box">
+            <h2>Criar Conta</h2>
+            <form id="register-form">
+                <div class="input-box">
+                    <input type="text" id="nome" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="morada" required>
+                    <label>Morada</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="telemovel" required>
+                    <label>Telemóvel</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <button id="btn-register" type="button" class="btn">Criar Conta</button>
+                <p>Já tens uma conta? <a href="login.html">Faz Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="registo.js"></script>
+</body>
+</html>

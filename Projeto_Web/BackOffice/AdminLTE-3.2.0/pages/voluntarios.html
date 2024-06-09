@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planeta Vivo - Voluntários </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- fullCalendar -->
+  <link rel="stylesheet" href="../plugins/fullcalendar/main.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+  <style>
+      .info-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      text-align: left;
+      padding-left: 10px;
+      }
+
+    .info-text {
+        font-size: 16px;
+        color: #666;
+        text-align: left;
+        padding-left: 10px;
+    }
+</style>
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/BackOffice/AdminLTE-3.2.0/index.html" class="nav-link">Dashboard</a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a  class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Planeta Vivo</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin Planeta Vivo</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeVer" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-header">Funcionalidade BackOffice</li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/index.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Dashboards
+              </p>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendário
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/pages/voluntarios.html" class="nav-link active">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Voluntários
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/doadores.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              Doadores
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/blogs.html" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+              Blogs
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/BackOffice/AdminLTE-3.2.0/evento.html" class="nav-link">
+              <i class="nav-icon fas fa-bell"></i>
+              <p>
+              Projetos
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Voluntários</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="/BackOffice/AdminLTE-3.2.0/index.html">Dashboard</a></li>
+              <li class="breadcrumb-item active">Voluntários</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <!-- Card com os gráficos -->
+              <div class="col-md-8">
+                  <div class="card">
+                      <!-- Cabeçalho do card -->
+                      <div class="card-header">
+                          <h3 class="card-title">
+                              <i class="fas fa-chart-pie mr-1"></i>
+                              Gráficos dos voluntários
+                          </h3>
+                          <!-- Ferramentas do card -->
+                          <div class="card-tools">
+                              <ul class="nav nav-pills ml-auto">
+                                  <!-- Guia para o gráfico de área -->
+                                  <li class="nav-item">
+                                      <a class="nav-link active" href="#area-chart-section" data-toggle="tab">Área</a>
+                                  </li>
+                                  <!-- Guia para o gráfico Donut -->
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#donut-chart-section" data-toggle="tab">Donut</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <!-- Corpo do card -->
+                      <div class="card-body">
+                          <!-- Área de conteúdo da guia -->
+                          <div class="tab-content">
+                              <!-- Conteúdo da guia de área -->
+                              <div class="tab-pane active" id="area-chart-section">
+                                  <!-- Gráfico de área dos voluntários -->
+                                  <canvas class="chart" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                              </div>
+                              <!-- Conteúdo da guia Donut -->
+                              <div class="tab-pane" id="donut-chart-section">
+                                  <!-- Gráfico de donut dos voluntários -->
+                                  <canvas id="donut-chart" width="400" height="400"></canvas>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Rodapé do card -->
+                      <div class="card-footer bg-transparent"></div>
+                  </div>
+              </div>
+  
+              <!-- Informações Gerais -->
+              <div class="col-md-4">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="info-cards text-right">
+                              <div class="card">
+                                  <h3 class="info-title">Total de Voluntários</h3>
+                                  <p id="total-voluntarios" class="info-text">0</p>
+                              </div>
+                              <div class="card">
+                                  <h3 class="info-title">Voluntários Doadores</h3>
+                                  <p id="voluntarios-ativos" class="info-text">0</p>
+                              </div>
+                              <div class="card">
+                                  <h3 class="info-title">Voluntários Simples</h3>
+                                  <p id="voluntarios-inativos" class="info-text">0</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+          <!-- Fim do card -->
+          <!-- Inicio tabela com os voluntários-->
+          <div class="container mt-5 ">
+              <h2>Tabela com os voluntarios</h2>
+              
+              <table id="voluntarios-table" class="display" style="width:100%">
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>Email</th>
+                          <th>Morada</th>
+                          <th>Telemóvel</th>
+                          <th>É Doador?</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- Dados dos Voluntários serão inseridos aqui -->
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- /.content -->
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--Data tables -->
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    const perfis = JSON.parse(localStorage.getItem('perfis')) || [];
+    const doacoes = JSON.parse(localStorage.getItem('Doacoes')) || [];
+
+    function calculaVoluntarios() {
+        const totalVoluntarios = perfis.length;
+        const voluntariosDoadores = perfis.filter(perfil => {
+            return doacoes.some(doacao => doacao.email === perfil.email);
+        }).length;
+        const voluntariosSimples = totalVoluntarios - voluntariosDoadores;
+
+        return [totalVoluntarios, voluntariosDoadores, voluntariosSimples];
+    }
+
+    function atualizaGraficos() {
+        const data = calculaVoluntarios();
+
+        myLineChart.data.datasets[0].data = data;
+        myLineChart.update();
+
+        myDonutChart.data.datasets[0].data = data;
+        myDonutChart.update();
+    }
+
+    const initialData = calculaVoluntarios();
+
+    const lineData = {
+        labels: ["Voluntários Totais", "Voluntários Doadores", "Voluntários Simples"],
+        datasets: [{
+            label: "Presença de Voluntários",
+            data: initialData,
+            backgroundColor: ["#FDFF00", "#11b200", "#ff0000"], 
+        }]
+    };
+
+    const lineOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            display: false
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    };
+
+    const lineCtx = document.getElementById('line-chart').getContext('2d');
+    const myLineChart = new Chart(lineCtx, {
+        type: 'bar',
+        data: lineData,
+        options: lineOptions
+    });
+
+    const donutData = {
+        labels: ["Voluntários Totais", "Voluntários Doadores", "Voluntários Simples"],
+        datasets: [{
+            label: "Presença de Voluntários",
+            data: initialData,
+            backgroundColor: ["#FDFF00", "#11b200", "#ff0000"], 
+        }]
+    };
+
+    const donutOptions = {
+        responsive: true,
+        maintainAspectRatio: false
+    };
+
+    const donutCtx = document.getElementById('donut-chart').getContext('2d');
+    const myDonutChart = new Chart(donutCtx, {
+        type: 'doughnut',
+        data: donutData,
+        options: donutOptions
+    });
+
+    atualizaGraficos();
+});
+
+
+
+
+
+$(document).ready(function() {
+    let perfis = JSON.parse(localStorage.getItem('perfis')) || [];
+    //perfis = perfis.slice(2);
+
+    let doacoes = JSON.parse(localStorage.getItem('Doacoes')) || [];
+
+    let data = perfis.map(perfil => {
+        let hasDonation = doacoes.some(doacao => doacao.email === perfil.email);
+
+        return [
+            perfil.nome,
+            perfil.email,
+            perfil.morada,
+            perfil.telemovel,
+            hasDonation
+        ];
+    });
+
+    var table = $('#voluntarios-table').DataTable({
+        "data": data,
+        "columns": [
+            { "title": "Nome" },
+            { "title": "Email" },
+            { "title": "Morada" },
+            { "title": "Telemóvel" },
+            {
+                "title": "É Doador?",
+                "render": function(data, type, row) {
+                    if (data) {
+                        return '<input type="checkbox" checked disabled>';
+                    } else {
+                        return '<input type="checkbox" disabled>';
+                    }
+                }
+            }
+        ],
+        "paging": true,
+        "searching": true,
+        "ordering": true,
+        "info": true,
+        "pageLength": 10
+    });
+
+    var totalVoluntarios = table.rows().data().length;
+    var voluntariosAtivos = table.rows().data().filter(function(row) {
+        return row[4];
+    }).length;
+    var voluntariosInativos = totalVoluntarios - voluntariosAtivos;
+
+    document.getElementById("total-voluntarios").textContent = totalVoluntarios;
+    document.getElementById("voluntarios-ativos").textContent = voluntariosAtivos;
+    document.getElementById("voluntarios-inativos").textContent = voluntariosInativos;
+});
+</script>
+
+
+</body>
+</html>

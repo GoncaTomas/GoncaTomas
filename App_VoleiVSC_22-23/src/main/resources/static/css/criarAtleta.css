@@ -1,0 +1,190 @@
+header{
+            
+  background-image: linear-gradient(45deg, rgb(248, 248, 233), white, gray, rgb(39, 38, 38));
+  border-bottom-color: darkgray;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+}
+
+  /*Ordenar o simbolo do vitoria a esquerda*/
+.lado-esquerdo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-vitoria{
+  width: 50px;
+  margin-left: 25px;
+  margin-top: 5px;
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.logo-vitoria:hover{
+  margin-top: 80px;
+  width: 100px;
+  opacity: 0.8;
+
+}
+
+body {
+  align-items: center;
+  background-attachment: scroll;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/pavilhao.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  margin-bottom: 500px;
+  margin-top: 50px;
+}
+
+
+.texto-adicionar{
+  font-size: 40px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  background-image: linear-gradient(45deg, white, gray, black);
+  border-radius: 10px;
+  padding: 10px 150px 10px 150px;
+}
+
+.texto{
+  font-family: 'Segoe UI', sans-serif; /* adiciona uma fonte mais moderna */
+  font-weight: bold; /* torna o texto mais forte e destacado */
+  text-shadow: 2px 2px 2px #000000; /* adiciona uma sombra ao texto para que ele se destaque mais no fundo */
+}
+
+
+input[type=text], input[type=number], select {
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0,0.2);
+display: block;
+font-size: 16px;
+margin-bottom: 20px;
+padding: 10px;
+width: 100%;
+}
+
+input[type=submit] {
+background-color: #008CBA;
+border: none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+font-size: 18px;
+padding: 10px;
+width: 100%;
+transition: opacity 0.1;
+}
+
+input[type=submit]:hover {
+background-color: #006699;
+}
+
+input[type=submit]:active{
+  opacity: 0.8;
+}
+
+
+/*Para o texto cria em cima*/ 
+.texto-adicionar{
+  font-size: 40px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*Fundo do Formulario*/
+.formulario{
+  background-image: linear-gradient(45deg, white, gray, black);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(107, 107, 107, 0.2);
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 40px 110px 60px 110px;
+}
+
+.conteudo-formulario{
+   margin-bottom: 100px;
+  }
+
+input[type="email"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.botao-pai{
+  display:flex ;
+  justify-content: space-between;
+}
+
+button{
+  background-color: rgb(170, 7, 7);
+  padding: 8px 12px 12px 8px ;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.1;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+button:active{
+  opacity: 0.6;
+}
+
+label{
+display: block;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+footer {
+  background-color: #3a3838;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 5px;
+}
+
+.rodape {
+  max-width: 1400px;
+  margin: 0 auto;
+} 

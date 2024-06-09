@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planeta Vivo - Blogs</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Dashboard</a>
+      </li>
+      
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a  class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Planeta Vivo</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin Planeta Vivo</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Procurar" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          
+          <li class="nav-header">Funcionalidades BackOffice</li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link ">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Dashboards
+              </p>
+            </a> 
+          </li>
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendário
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/voluntarios.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Voluntários
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="doadores.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+              Doadores
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="blogs.html" class="nav-link active">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+              Blogs
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="evento.html" class="nav-link">
+              <i class="nav-icon fas fa-bell"></i>
+              <p>
+              Projetos 
+              <i class="badge badge-info right"></i>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Blogs</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+              <li class="breadcrumb-item active">Blogs </li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- general form elements -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Criar Publicação</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form id="publicacao-form">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="titulo">Título</label>
+                  <input type="text" class="form-control" id="tituloPublicacao" placeholder="Escreva o titulo da publicação">
+                </div>
+                <div class="form-group">
+                  <label for="conteudo">Conteúdo</label>
+                  <textarea class="form-control" id="conteudo" rows="5" placeholder="Conteúdo da publicação"></textarea>
+              </div>
+                <div class="form-group">
+                  <label for="dropdown">Autores</label>
+                  <select class="form-control" id="dropdown" multiple>
+                    <option value="1">João Abreu</option>
+                    <option value="2">Gonçalo Tomás</option>
+                    <option value="3">Miguel Pinheiro</option>
+                    <option value="4">Miguel Luzes</option>
+                    <option value="5">Bento Teixeira</option>
+                </select>
+                </div>
+                <div class="form-group">
+                  <label for="inputStatus">Tags</label>
+                  <select id="inputStatus" class="form-control custom-select">
+                      <option selected disabled>Seleciona uma ou mais</option>
+                      <option>Praias</option>
+                      <option>Campanhas</option>
+                      <option>Espaço Verde</option>
+                      <option>Animais</option>
+                      <option>Reflorestação</option>
+                      <option>Energia Renovável</option>
+                      <option>Aquecimento Global</option>
+                      <option>Conservação da Natureza</option>
+                      <option>Mudanças Climáticas</option>
+                      <option>Sustentabilidade</option>
+                      <option>Ecologia</option>
+                      <option>Poluição do Ar</option>
+                      <option>Reciclagem</option>
+                      <option>Agricultura Sustentável</option>
+                      <option>Desenvolvimento Sustentável</option>
+                  </select>
+              </div>
+                <div class="form-group">
+                    <label for="conteudo">data</label>
+                    <input type="date" class="form-control" id="data" placeholder="data">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer row">
+                <div class="col text-left">
+                    <button id="btn-cancelar" type="button" class="btn btn-secondary">Cancelar</button>
+                </div>
+                <div class="col text-right">
+                    <button id="btnPublicar"type="submit" class="btn btn-primary">Publicar</button>
+                </div>
+            </div>
+            
+            </form>
+          </div>
+          <!-- /.card -->
+  
+         <!-- Default box -->
+<div class="card">
+  <div class="card-header">
+      <h3 class="card-title">Publicações</h3>
+      <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+          </button>
+      </div>
+  </div>
+  <div class="card-body p-0">
+      <table class="table table-striped projects w-100">
+          <thead>
+              <tr>
+                  <th style="width: 1%">#</th>
+                  <th style="width: 20%">Publicação</th>
+                  <th style="width: 40%">Autores</th>
+                  <th>Likes</th>
+                  <th style="width: 8%" class="text-center">Sucesso</th>
+                  <th style="width: 20%"></th>
+              </tr>
+          </thead>
+          <tbody id="publicationsTableBody">
+              <!-- As linhas serão inseridas aqui dinamicamente -->
+          </tbody>
+      </table>
+  </div>
+  <!-- /.card-body -->
+</div>
+
+<div class="card">
+  <div class="card-header">
+      <h3 class="card-title">Editar</h3>
+      <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+          </button>
+      </div>
+  </div>
+  <div class="card-body">
+    <!-- Formulário de Edição -->
+    <form id="edit-form" style="display: none;">
+      <div class="form-group">
+          <label for="edit-title">Título</label>
+          <input type="text" class="form-control" id="edit-title" placeholder="Editar título">
+      </div>
+      <div class="form-group">
+          <label for="edit-content">Conteúdo</label>
+          <textarea class="form-control" id="edit-content" rows="5" placeholder="Editar conteúdo"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="edit-date">Data</label>
+          <input type="date" class="form-control" id="edit-date" placeholder="Editar data">
+      </div>
+      <div class="form-group">
+        <label for="edit-tags">Tags</label>
+        <select id="edit-tags" class="form-control custom-select">
+            <option selected disabled>Seleciona uma ou mais</option>
+            <option>Praias</option>
+            <option>Campanhas</option>
+            <option>Espaço Verde</option>
+            <option>Animais</option>
+            <option>Reflorestação</option>
+            <option>Energia Renovável</option>
+            <option>Aquecimento Global</option>
+            <option>Conservação da Natureza</option>
+            <option>Mudanças Climáticas</option>
+            <option>Sustentabilidade</option>
+            <option>Ecologia</option>
+            <option>Poluição do Ar</option>
+            <option>Reciclagem</option>
+            <option>Agricultura Sustentável</option>
+            <option>Desenvolvimento Sustentável</option>
+        </select>
+    </div>
+      <div class="card-footer">
+          <button id="save-edit" class="btn btn-primary" data-id="">Salvar</button>
+          <button id="cancel-edit" class="btn btn-secondary">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+  
+    <!-- /.card -->
+
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+
+    
+    <script>
+       document.getElementById("btnPublicar").addEventListener("click", function() {
+        let contagemLikes = 0;
+        // Recuperar o contador do localStorage
+        var contador = localStorage.getItem('contadorPublicacoes') ? parseInt(localStorage.getItem('contadorPublicacoes')) : 1;
+
+        // Capturar os valores do formulário
+        let titulo = document.getElementById("tituloPublicacao").value;
+        let conteudo = document.getElementById('conteudo').value;
+        let autores = Array.from(document.getElementById('dropdown').selectedOptions).map(option => option.textContent);
+        let tags = document.getElementById('inputStatus').value;
+        let data = document.getElementById('data').value;
+
+        // Criar objeto da publicação
+        var publicacao = {
+            id: contador,
+            titulo: titulo,
+            conteudo: conteudo,
+            autores: autores,
+            tags: tags,
+            data: data,
+            contagemLikes: contagemLikes
+        };
+
+            // Armazenar a publicação no localStorage
+            localStorage.setItem('publicacao' + contador, JSON.stringify(publicacao));
+
+            // Incrementar o contador
+            contador++;
+            localStorage.setItem('contadorPublicacoes', contador);
+
+            // Limpar o forms
+            document.getElementById('publicacao-form').reset();
+
+            // Mensagem de sucesso
+            window.alert('Publicação publicada com sucesso!');
+
+            carregarPublicacoes();
+        });
+
+        document.getElementById("btn-cancelar").addEventListener("click", function() {
+            document.getElementById('publicacao-form').reset();
+        });
+
+
+        function carregarPublicacoes() {
+          const tableBody = document.querySelector('#publicationsTableBody');
+          tableBody.innerHTML = ''; // Limpar a tabela antes de carregar novamente
+
+          Object.keys(localStorage).forEach((key) => {
+              if (key.startsWith('publicacao')) {
+                  const publicacao = JSON.parse(localStorage.getItem(key));
+                  const tableRow = createTableRow(publicacao);
+                  tableBody.appendChild(tableRow);
+              }
+          });
+      }
+
+function createTableRow(publicacao) {
+    const row = document.createElement('tr');
+
+    const authorsList = publicacao.autores.map(autor => `<li>${autor}</li>`).join('');
+
+    let progressPercentage = publicacao.contagemLikes ? publicacao.contagemLikes : 0;
+            let progressStatus;
+            if (progressPercentage > 50) {
+                progressStatus = 'Muito Boa';
+            } else if (progressPercentage > 20) {
+                progressStatus = 'Boa';
+            } else if (progressPercentage > 5) {
+                progressStatus = 'Médio';
+            } else {
+                progressStatus = 'Baixo';
+            }
+
+    row.innerHTML = `
+        <td>${publicacao.id}</td>
+        <td>
+            <a>${publicacao.titulo}</a>
+            <br/>
+            <small>Created ${publicacao.data}</small>
+        </td>
+        <td>
+            <ul class="list-inline">
+                ${authorsList}
+            </ul>
+        </td>
+        <td>${publicacao.contagemLikes} Likes</td>
+        <td class="project-state">
+            <span class="badge badge-warning">${progressStatus}</span>
+        </td>
+        <td class="project-actions text-right">
+          <a class="btn btn-info btn-sm edit-btn" data-id="${publicacao.id}">
+              <i class="fas fa-pencil-alt"></i>
+              Editar
+          </a>
+            <a class="btn btn-danger btn-sm delete-btn" data-id="${publicacao.id}">
+                <i class="fas fa-trash"></i>
+                Apagar
+            </a>
+        </td>
+    `;
+
+    // Adiciona o evento de click para apagar a publicação
+    row.querySelector('.delete-btn').addEventListener('click', function() {
+        const publicationID = this.dataset.id;
+        localStorage.removeItem(`publicacao${publicationID}`);
+        row.remove(); 
+    });
+
+    return row;
+}
+
+// Carregar as publicações ao carregar a página
+document.addEventListener('DOMContentLoaded', carregarPublicacoes);
+
+
+
+// Carregar as publicações ao carregar a página
+document.addEventListener('DOMContentLoaded', carregarPublicacoes);
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Adiciona um evento de clique para cada botão "Editar"
+    document.querySelectorAll('.edit-btn').forEach(function(editButton) {
+        editButton.addEventListener('click', function() {
+            const publicationID = editButton.dataset.id;
+            const publicationData = JSON.parse(localStorage.getItem(`publicacao${publicationID}`));
+
+            // Preenche os campos do formulário de edição com os dados da publicação
+            document.getElementById('edit-title').value = publicationData.titulo;
+            document.getElementById('edit-content').value = publicationData.conteudo;
+            document.getElementById('edit-date').value = publicationData.data;
+            document.getElementById('edit-tags').value = publicationData.tags;
+
+            // Defina o ID do botão "Salvar" com o ID da publicação
+            document.getElementById('save-edit').dataset.id = publicationID;
+
+            // Exiba o formulário de edição
+            document.getElementById('edit-form').style.display = 'block';
+        });
+    });
+
+    // Adiciona um evento de clique para o botão "Cancelar" no formulário de edição
+    document.getElementById('cancel-edit').addEventListener('click', function() {
+        document.getElementById('edit-form').style.display = 'none';
+    });
+
+    // Adiciona um evento de clique para o botão "Salvar" no formulário de edição
+    document.getElementById('save-edit').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do formulário
+
+        const publicationID = this.dataset.id;
+
+        const editedTitle = document.getElementById('edit-title').value;
+        const editedContent = document.getElementById('edit-content').value;
+        const editedDate = document.getElementById('edit-date').value;
+        const editedTags = document.getElementById('edit-tags').value;
+
+        console.log("Novo título:", editedTitle); // Ponto de depuração
+        console.log("Novo conteúdo:", editedContent); // Ponto de depuração
+
+        // Atualiza os dados da publicação no localStorage
+        const publicationData = JSON.parse(localStorage.getItem(`publicacao${publicationID}`));
+        publicationData.titulo = editedTitle;
+        publicationData.conteudo = editedContent;
+        publicationData.data = editedDate;
+        publicationData.tags = editedTags;
+        localStorage.setItem(`publicacao${publicationID}`, JSON.stringify(publicationData));
+
+        // Atualize a exibição da tabela
+        carregarPublicacoes();
+
+        // Oculte o formulário de edição
+        document.getElementById('edit-form').style.display = 'none';
+    });
+});
+
+
+    </script>
+</body>
+</html>

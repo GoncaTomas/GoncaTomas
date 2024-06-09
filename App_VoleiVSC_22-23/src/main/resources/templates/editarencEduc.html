@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edição</title>
+  <link rel="stylesheet" href="../css/editaratleta.css">
+</head>
+<body>
+  <header>
+    <div class="lado-esquerdo">
+      <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+    </div>
+  </header>
+  
+  <div>
+    <div class="texto-adicionar">
+      <h1 class="texto">Editar Nome do Filho</h1>
+    </div>
+    
+    <div class="corpo-central">
+      <form action="/encEduc/editarencEduc" method="post">
+        <div>
+            <label for="idEncEduc">Encarregado de Educação ID:</label>
+            <input type="number" id="idEncEduc" name="idEncEduc" value="" required>
+          </div>
+        <div>
+          <label for="nomeFilho">Nome do Filho:</label>
+          <input type="text" id="nomeFilho" name="nomeFilho" value="" required>
+        </div>
+        <div class="botao-pai">
+          
+          <button class="botao-submit" type="submit">Salvar</button>
+          <button class="button-cancelar" type="button" onclick="window.location.href='/encEduc'">Cancelar</button>
+        
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="rodape">
+      <P>
+      
+      </P>
+    </div>
+  </footer>
+</body>
+</html>

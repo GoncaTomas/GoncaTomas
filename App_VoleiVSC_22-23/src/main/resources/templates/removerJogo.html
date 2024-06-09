@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Remover Jogo</title>
+        <link rel="stylesheet" href="../css/removerjogo.css">
+    </head>
+<body>
+  <header>
+    <div class="lado-esquerdo">
+        <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+    </div>
+  </header>
+
+  <div class="texto-adicionar">
+    <h1 class="texto">Remover Jogo</h1>
+  </div>
+  
+  <div class="form-container">
+    <form class="form" action="/jogo/removerjogo" method="post">
+      <div class="form-group">
+        <label class="form-label" for="idJogo">ID do Jogo:</label>
+        <input  class="form-input" type="number" id="idJogo" name="idJogo" required>
+      </div>
+      <div class="button-container">
+        <input class="form-button" type="submit" value="Remover Jogo">
+        <button class="form-button form-button-cancel" type="button" onclick="window.location.href='/jogo'">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <div class="rodape">
+     
+    </div>
+  </footer>
+
+</body>
+</html>

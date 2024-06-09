@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogos</title>
+  <link rel="stylesheet" href="css/jogo.css">
+
+
+</head>
+
+<body>
+<header>
+  <div class="lado-esquerdo">
+      <img class="logo-vitoria" src="images/Logo-Vitoria.png">
+  </div>
+</header>
+
+<div class="corpo-central">
+  <div>
+    <h1>Lista de Jogos</h1>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <div>
+          <th class="tabela">Codigo do Jogo</th>
+        </div>
+        <div>
+          <th class="tabela">Data e Hora </th>
+        </div>
+        <div>
+          <th class="tabela">Local</th>
+        </div>
+        <div>
+          <th class="tabela">Equipa Adversaria</th>
+        </div>
+
+      </tr>
+      <tr th:each="jogo : ${jogo}">
+        <td th:text="${jogo.idJogo}"></td>
+        <td th:text="${jogo.datahora}"></td>
+        <td th:text="${jogo.local}"></td>
+        <td th:text="${jogo.equipaAdv}"></td>
+      </tr>
+    </table>
+  </div>
+  <div  class="botao-pai">
+    <div class="botao-criar">
+      <button class="center" onclick="window.location.href='/jogo/criarjogo'">Criar Novo Jogo</button>
+    </div>
+    <div class="botao-criar">
+      <button class="center" onclick="window.location.href='/jogo/editarjogo'">Editar Jogo</button>
+    </div>
+    <div class="botao-criar">
+      <button class="center" onclick="window.location.href='/jogo/removerjogo'">Remover Jogo</button>
+    </div>
+    </div>
+</div>
+
+<footer>
+  <div class="rodape">
+    <P>
+
+    </P>
+  </div>
+</footer>
+<div class="botao-voltar">
+  <button class="center" onclick="window.location.href='/home'">Voltar à Página Inicial</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="../css/chat.css">
+</head>
+<body>
+
+      <header>
+        <div class="lado-esquerdo">
+            <img class="logo-vitoria" src="images/Logo-Vitoria.png">
+        </div>
+      </header>
+
+    <h2>Bem-vindo ao chat, <span th:text="${user.username}"></span>!</h2>
+   
+    <div>
+        <h3>Mensagens:</h3>
+            <div th:each="message : ${messages}" class="chat-message">
+                <span th:text="${message.nome_user}" th:inline="none"></span>: <span th:text="${message.conteudo_mensagem}"></span>
+            </div>            
+    </div>
+    
+    <form action="/chat" method="post">
+        <input type="hidden" name="username" value="${user.username}">
+        <input type="text" name="conteudo_mensagem" placeholder="Digite uma mensagem" required />
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="botao-voltar">
+        <button class="center" onclick="window.location.href='/home'">Voltar à Página Inicial</button>
+      </div>
+</body>
+</html>

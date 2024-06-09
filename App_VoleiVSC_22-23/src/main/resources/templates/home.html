@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="css/home.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lado-esquerdo">
+      <img class="logo-vitoria" src="images/Logo-Vitoria.png">
+    </div>
+    <div class="lado-direito">
+      <ion-icon name="power-outline" class="botton-off"></ion-icon>
+      <div>
+        <button class="logout-button" data-popup="true">Terminar Sessão</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="linha">
+    <div class="col">
+      <h1>Página inicial</h1>
+      <p class="descricao">Seja bem-vindo à página inicial!</p>
+    </div>
+    <div class="col">
+      <div class="caixa-div">
+        <a th:href="@{/perfil}" class="caixa-escolhas caixa1">
+          <p>Ver perfil</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/criarUser}" class="caixa-escolhas caixa2">
+          <p>Criar Novo Utilizador</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/treino}" class="caixa-escolhas caixa3">
+          <p>Treinos</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/jogo}" class="caixa-escolhas caixa4">
+          <p>Jogos</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/atletas}" class="caixa-escolhas caixa5">
+          <p>Atletas</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/equipaTecnica}" class="caixa-escolhas caixa6">
+          <p>Equipa Técnica</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/relatorio}" class="caixa-escolhas caixa7">
+          <p>Relatórios</p>
+        </a>
+      </div>
+      <div class="caixa-div">
+        <a th:href="@{/chat}" class="caixa-escolhas caixa8">
+          <p>Chat de Conversas</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
+      
+
+
+
+<!-- 
+  <div class="estrutura-escolhas">
+    <nav>
+      <ul>
+        <li><a th:href="@{/perfil}">Ver perfil</a></li>
+        <li><a th:href="@{/criarUser}">Criar Novo Utilizador</a></li>
+        <li><a th:href="@{/treino}">Treinos</a></li>
+        <li><a th:href="@{/jogo}">Jogos</a></li>
+        <li><a th:href="@{/atletas}">Atletas</a></li>
+        <li><a th:href="@{/equipaTecnica}">Equipa Técnica</a></li>
+        <li><a th:href="@{/relatorio}">Relatórios</a></li>
+        <li><a th:href="@{/chat}">Chat de Conversas</a></li>
+      </ul>
+    </nav>
+  </div>
+</div> -->
+
+
+  <div id="custom-popup" class="popup-container hidden">
+    <div class="popup-content">
+      <p class="texto-popUp">Tens a certeza que queres sair?</p>
+      <div class="popup-buttons">
+        <button onclick="confirmLogout()">Sim</button>
+        <button onclick="closeCustomPopup()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const logoutButton = document.querySelector('.logout-button[data-popup="true"]');
+    logoutButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      showConfirmationPopup();
+    });
+
+    function showConfirmationPopup() {
+      document.getElementById('custom-popup').classList.remove('hidden');
+    }
+    
+    function closeCustomPopup() {
+      document.getElementById('custom-popup').classList.add('hidden');
+    }
+    
+    function confirmLogout() {
+      window.location.href = '/login';
+    }
+  </script>
+</body>
+</html>

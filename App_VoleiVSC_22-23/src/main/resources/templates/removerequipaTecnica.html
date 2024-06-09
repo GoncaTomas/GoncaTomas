@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Remover Atleta</title>
+        <link rel="stylesheet" href="../css/removeratleta.css">
+    </head>
+        
+<body>
+      <header>
+        <div class="lado-esquerdo">
+          <a onclick="window.location.href='/login'; return false;">
+            <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+          </a>
+        </div>
+      </header>
+
+    <div class="texto-adicionar">
+      <h1 class="texto">Remover Elemento da Equipa Técnica</h1>
+    </div>
+    
+    <div class="form-container">
+      <form class="form" action="/equipaTecnica/removerequipaTecnica" method="post">
+        <div class="form-group">
+          <label class="form-label" for="id">Profissional ID:</label>
+          <input class="form-input" type="number" id="id" name="id" required>
+        </div>
+        <div class="button-container">
+          <input class="form-button" type="submit" value="Remover Elemento da Equipa Técnica">
+          <button class="form-button form-button-cancel" type="button" onclick="window.location.href='/equipaTecnica'">Cancelar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+        <div class="rodape">
+          <P>
+            
+          </P>
+        </div>
+      </footer>
+
+</body>
+</html>

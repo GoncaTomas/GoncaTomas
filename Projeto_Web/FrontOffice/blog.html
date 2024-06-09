@@ -1,0 +1,581 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Environmental</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+    .blog_like {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    }
+
+    .like-button {
+        display: flex;
+        align-items: center;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .like-button:hover {
+        background-color: #0056b3;
+    }
+
+    .like-button.disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .like-button .fa-thumbs-up {
+        margin-right: 5px;
+    }
+
+    .like-count {
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+
+    .disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6; 
+    }
+
+    .post-image {
+    max-width: 150px; 
+    max-height: 100px; 
+    }
+    </style>
+
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/main_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/main_logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.html">Página Inicial</a></li>
+                                                <li><a href="about.html">Sobre nós</a></li>
+                                                <li><a href="what-do.html">O Que Fazemos</a></li>
+                                                <li><a href="projects.html">Projetos</a></li>
+                                                <li><a href="blog.html">Blog</a>                                                
+                                                <li><a href="pagina_doacoes.html">Doações</a></li>                                                
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->                              
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="area_user.html" class="btn header-btn">Área do Cliente</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70">
+                                <h2>Blog</h2>
+                                <nav aria-label="breadcrumb"></nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? Blog Area Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <div class="blog_left_sidebar">
+                        </div>
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link previous-page" aria-label="Previous">
+                                        <i class="ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link next-page" aria-label="Next">
+                                        <i class="ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Posts Recentes</h3>
+                                <div id="recent-posts"></div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+           <div class="footer-area footer-padding">
+               <div class="container ">
+                   <div class="row justify-content-between">
+                       <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
+                           <div class="single-footer-caption mb-50">
+                               <div class="single-footer-caption mb-30">
+                                   <!-- logo -->
+                                   <div class="footer-logo mb-35">
+                                       <a href="index.html"><img src="assets/img/logo/main_logo.png" alt=""></a>
+                                   </div>
+                                   <div class="footer-tittle">
+                                       <div class="footer-pera">
+                                           <p>A Mudança no Planeta Começa Hoje!</p>
+                                       </div>
+                                   </div>
+                                   <!-- social -->
+                                   
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Meio Ambiente</h4>
+                                   <ul>
+                                       <li><a href="index.html">Página Inicial</a></li>
+                                       <li><a href="about.html">Sobre-Nós</a></li>
+                                       <li><a href="what-do.html">O Que Fazemos</a></li>
+                                       <li><a href="projects.html">Projetos</a></li>
+                                       <li><a href="blog.html">Blog</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4>Contacte-nos</h4>
+                                   <ul>
+                                       <li><a href="#">planetavivo@gmail.com</a></li>
+                                       <li><a href="#">Guimarães, Portugal</a></li>
+                                       
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- footer-bottom area -->
+           <div class="footer-bottom-area">
+               <div class="container">
+                   <div class="footer-border">
+                       <div class="row d-flex align-items-center">
+                           <div class="col-xl-12 ">
+                               <div class="footer-copy-right text-center">
+                                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let currentPage = 1;
+        const itemsPerPage = 4;
+        const totalPublicacoes = parseInt(localStorage.getItem('contadorPublicacoes')) || 0;
+        const container = document.querySelector('.blog_left_sidebar');
+
+        function displayNews(page) {
+    container.innerHTML = '';
+
+    // Buscar todas as publicações do localStorage
+    const keys = Object.keys(localStorage).filter(key => key.startsWith('publicacao'));
+    let publicacoes = keys.map(key => JSON.parse(localStorage.getItem(key)) || {});
+
+    // Ordenar as publicações por data em ordem decrescente
+    publicacoes.sort((a, b) => new Date(b.data) - new Date(a.data));
+
+    // Calcular índices de paginação
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, publicacoes.length);
+
+    for (let i = startIndex; i < endIndex; i++) {
+        const publicacao = publicacoes[i];
+
+        if (publicacao.data) {
+            const partesDia = publicacao.data.split("-");
+            const dia = partesDia[2];
+            const mes = partesDia[1];
+            let mesAbreviado;
+            switch (mes) {
+                case "01": mesAbreviado = "Jan"; break;
+                case "02": mesAbreviado = "Fev"; break;
+                case "03": mesAbreviado = "Mar"; break;
+                case "04": mesAbreviado = "Abr"; break;
+                case "05": mesAbreviado = "Mai"; break;
+                case "06": mesAbreviado = "Jun"; break;
+                case "07": mesAbreviado = "Jul"; break;
+                case "08": mesAbreviado = "Ago"; break;
+                case "09": mesAbreviado = "Set"; break;
+                case "10": mesAbreviado = "Out"; break;
+                case "11": mesAbreviado = "Nov"; break;
+                case "12": mesAbreviado = "Dez"; break;
+                default: mesAbreviado = mes; break;
+            }
+
+            const tag = publicacao.tags;
+            let imagemCampanha = selecionarImagem(tag)
+
+            const novoArtigo = document.createElement('article');
+            novoArtigo.className = 'blog_item';
+
+            novoArtigo.innerHTML = `
+                <div class="blog_item_img">
+                    <img class="card-img rounded-0" src="${imagemCampanha}" alt="">
+                    <div class="blog_item_date">
+                        <h3>${dia}</h3>
+                        <p>${mesAbreviado}</p>
+                    </div>
+                </div>
+                <div class="blog_details" data-id="${publicacao.id}">
+                    <h2 class="blog-head" style="color: #2d2d2d;">${publicacao.titulo}</h2>
+                    <p>${publicacao.conteudo}</p>
+                    <div class="blog_like">
+                        <button class="like-button">
+                            <i class="fa fa-thumbs-up like-icon" aria-hidden="true"></i>
+                            <span>Like</span>
+                        </button>
+                        <span class="like-count" id="like-count-${i + 1}">0 Likes</span>
+                    </div>
+                </div>
+            `;
+
+            container.appendChild(novoArtigo);
+        } else {
+            console.error(`Publicação ${i + 1} não possui data válida.`);
+        }
+    }
+
+    updatePaginationButtons();
+
+    document.querySelectorAll('.blog_details').forEach(function(detailsContainer) {
+        const publicationID = detailsContainer.dataset.id;
+        console.log('Publication ID:', publicationID); 
+
+        const likeContainer = detailsContainer.querySelector('.blog_like');
+        const likeCountElement = likeContainer.querySelector('.like-count');
+        const likeButton = likeContainer.querySelector('.like-button');
+
+        let publicationData = JSON.parse(localStorage.getItem(`publicacao${publicationID}`));
+        let likeCount = publicationData ? publicationData.contagemLikes : 0;
+
+        updateLikeCount();
+
+        if (localStorage.getItem(`liked_${publicationID}`)) {
+            likeButton.classList.add('disabled');
+            likeButton.disabled = true;
+        }
+
+        likeButton.addEventListener('click', function() {
+            if (!likeButton.classList.contains('disabled')) {
+                likeCount++;
+                updateLikeCount();
+
+                if (publicationData) {
+                    publicationData.contagemLikes = likeCount;
+                } else {
+                    publicationData = { contagemLikes: likeCount };
+                }
+
+                localStorage.setItem(`publicacao${publicationID}`, JSON.stringify(publicationData));
+
+                // Marcar que o usuário já deu like nesta publicação
+                localStorage.setItem(`liked_${publicationID}`, true);
+                likeButton.classList.add('disabled');
+                likeButton.disabled = true;
+            }
+        });
+
+        function updateLikeCount() {
+            likeCountElement.textContent = `${likeCount} Likes`;
+        }
+    });
+}
+
+        
+       
+        
+
+function calculateTotalPages() {
+    return Math.ceil(totalPublicacoes / itemsPerPage);
+}
+
+function updatePaginationButtons() {
+    const totalPages = calculateTotalPages();
+    const prevButton = document.querySelector('.previous-page').parentElement;
+    const nextButton = document.querySelector('.next-page').parentElement;
+
+    if (currentPage === 1) {
+        prevButton.classList.add('disabled');
+    } else {
+        prevButton.classList.remove('disabled');
+    }
+
+    if (currentPage === totalPages) {
+        nextButton.classList.add('disabled');
+    } else {
+        nextButton.classList.remove('disabled');
+    }
+}
+
+function goToPreviousPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        displayNews(currentPage);
+    }
+}
+
+function goToNextPage() {
+    const totalPages = calculateTotalPages();
+    if (currentPage < totalPages) {
+        currentPage++;
+        displayNews(currentPage);
+    }
+}
+
+document.querySelector('.previous-page').addEventListener('click', function(event) {
+    event.preventDefault();
+    goToPreviousPage();
+});
+
+document.querySelector('.next-page').addEventListener('click', function(event) {
+    event.preventDefault();
+    goToNextPage();
+});
+
+displayNews(currentPage);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Função para carregar e exibir posts recentes
+    function loadRecentPosts() {
+        let posts = [];
+
+        // Recuperar publicações do localStorage
+        for (let i = 1; i <= localStorage.length; i++) {
+            let key = `publicacao${i}`;
+            if (localStorage.getItem(key)) {
+                let publicacao = JSON.parse(localStorage.getItem(key));
+                posts.push(publicacao);
+            }
+        }
+
+        // Ordenar publicações pela data, da mais recente para a mais antiga
+        posts.sort((a, b) => new Date(b.data) - new Date(a.data));
+
+        let recentPosts = posts.slice(0, 3);
+        let recentPostsContainer = document.getElementById('recent-posts');
+        recentPostsContainer.innerHTML = '';
+
+        recentPosts.forEach(post => {
+            let postElement = document.createElement('div');
+            postElement.className = 'media post_item';
+
+            let postImage = selecionarImagem(post.tags);
+
+            postElement.innerHTML = `
+                <img class="post-image" src="${postImage}" alt="post">
+                <div class="media-body">
+                    <h3 style="color: #2d2d2d;">${post.titulo}</h3>
+                    <p>${new Date(post.data).toLocaleDateString('pt-PT', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+                </div>
+            `;
+            recentPostsContainer.appendChild(postElement);
+        });
+    }
+
+    loadRecentPosts();
+});
+
+function selecionarImagem(tag){
+    switch (tag) {
+                case "Praias":
+                    imagemCampanha = "assets/img/blog/praia.png";
+                    break;
+                case "Campanhas":
+                    imagemCampanha = "assets/img/blog/manifestacao.png";
+                    break;
+                case "Espaço Verde":
+                    imagemCampanha = "assets/img/blog/parqueflorestaldemonsanto.jpg";
+                    break;
+                case "Animais":
+                    imagemCampanha = "assets/img/blog/parqueflorestaldemonsanto/gatos-1.jpg";
+                    break;
+                case "Reflorestação":
+                    imagemCampanha = "assets/img/blog/reflorestacao.jpg";
+                    break;
+                case "Energia Renovável":
+                    imagemCampanha = "assets/img/blog/PaneisAlqueva.jpg";
+                    break;
+                case "Aquecimento Global":
+                    imagemCampanha = "assets/img/blog/polution-5jun.jpg";
+                    break;
+                case "Conservação da Natureza":
+                    imagemCampanha = "assets/img/blog/conservarNatureza.png";
+                    break;
+                case "Mudanças Climáticas":
+                    imagemCampanha = "assets/img/blog/inundacao.jpeg";
+                    break;
+                case "Sustentabilidade":
+                    imagemCampanha = "assets/img/blog/Reflorestação-PT-face-4.jpg";
+                    break;
+                case "Ecologia":
+                    imagemCampanha = "assets/img/blog/ecologia.png";
+                    break;
+                case "Poluição do Ar":
+                    imagemCampanha = "assets/img/blog/poluicao_02.jpg";
+                    break;
+                case "Reciclagem":
+                    imagemCampanha = "assets/img/blog/reciclagem-em-portugal-um-panorama-atualizado.jpg";
+                    break;
+                case "Agricultura Sustentável":
+                    imagemCampanha = "assets/img/blog/agricultura-sustentavel.jpg";
+                    break;
+                case "Desenvolvimento Sustentável":
+                    imagemCampanha = "assets/img/blog/ecoponto-embalagens-reciclagem-spv.jpg";
+                    break;
+                default:
+                    imagemCampanha = "assets/img/blog/eolica-oceano-milenio-stadium.jpg";
+                    break;
+            }
+
+            return imagemCampanha;
+    }
+
+    </script>
+</body>
+</html>

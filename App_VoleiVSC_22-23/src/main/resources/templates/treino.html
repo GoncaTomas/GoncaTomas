@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <title>Treinos</title>
+  <link rel="stylesheet" href="css/jogo.css">
+</head>
+
+<body>
+  <header>
+    <div class="lado-esquerdo">
+        <img class="logo-vitoria" src="images/Logo-Vitoria.png">
+    </div>
+  </header>
+
+  <div class="corpo-central">
+    <div>
+      <h1>Lista de Treinos</h1>
+    </div>
+
+    <div>
+      <table>
+        <tr>
+          <div>
+            <th class="tabela">Codigo do Treino</th>
+          </div>
+          <div>
+            <th class="tabela">Data e Hora </th>
+          </div>
+          <div>
+            <th class="tabela">Equipa/Escalão</th>
+          </div>
+          <div>
+            <th class="tabela">Treinador</th>
+          </div>
+        </tr>
+        <tr th:each="treino : ${treino}">
+          <td th:text="${treino.cod_treino}"></td>
+          <td th:text="${treino.datahora}"></td>
+          <td th:text="${treino.nome_equipa}"></td>
+          <td th:text="${treino.nome_treinador}"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="botao-pai">
+      <div class="botao-criar">
+        <button class="center" onclick="window.location.href='/treino/criartreino'">Criar Novo Treino</button>
+      </div>
+      <div class="botao-criar">
+        <button class="center" onclick="window.location.href='/treino/editartreino'">Editar Treino</button>
+      </div>
+      <div class="botao-criar">
+        <button class="center" onclick="window.location.href='/treino/removertreino'">Remover Treino</button>
+      </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="rodape">
+      <p>
+    
+      </p>
+    </div>
+  </footer>
+  <div class="botao-voltar">
+    <button class="center" onclick="window.location.href='/home'">Voltar à Página Inicial</button>
+  </div>
+</body>
+</html>

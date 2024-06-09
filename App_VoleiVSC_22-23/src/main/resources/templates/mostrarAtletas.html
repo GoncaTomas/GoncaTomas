@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Atletas disponiveis</title>
+    <link rel="stylesheet" href="../css/criarAtleta.css">
+</head>
+<body>
+
+    <header>
+        <div class="lado-esquerdo">
+          <img class="logo-vitoria" src="/images/Logo-Vitoria.png">
+        </div>
+    </header>
+
+    <div class="texto-adicionar">
+        <p class="texto">
+            Criar Atleta
+        </p>
+    </div>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Username</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="atleta : ${atletas}">
+        <td th:text="${atleta.username}"></td>
+        <td><form action="/atletas/criarAtleta" method="GET">
+          <input type="hidden" name="idUser" th:value="${atleta.idUser}">
+          <button type="submit">Criar Atleta</button>
+        </form></td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <!--<div class="formulario">
+        <form action="/atletas/criaratleta" method="post">
+
+            <input type="hidden" id="idUser">
+
+            <label for="posicao">Posição:</label>
+            <input type="text" id="posicao" name="posicao" required><br>
+
+            <label for="peso">Peso:</label>
+            <input type="number" step="any" id="peso" name="peso" required><br>
+
+            <label for="altura">Altura:</label>
+            <input type="number" step="any" id="altura" name="altura" required><br>
+
+            <label for="percentMassaMuscular">Percentagem de Massa Muscular:</label>
+            <input type="number" step="any" id="percentMassaMuscular" name="percentMassaMuscular" required><br>
+
+            <label for="percentMassaGorda">Percentagem de Massa Gorda:</label>
+            <input type="number" step="any" id="percentMassaGorda" name="percentMassaGorda" required><br>
+
+            <label for="imc">IMC:</label>
+            <input type="number" step="any" id="imc" name="imc" required><br>
+
+            <label for="impulsao">Impulsão:</label>
+            <input type="number" step="any" id="impulsao" name="impulsao" required><br>
+
+            <label for="forca">Força:</label>
+            <input type="number" step="any" id="forca" name="forca" required><br>
+
+            <div class="botao-pai">
+              <input type="submit" value="Criar Atleta">
+              <button type="button" onclick="window.location.href='/atletas'">Cancelar</button>
+            </div>
+        </form>
+    </div>-->
+    <footer>
+        <div class="rodape">
+          <P>
+        
+          </P>
+        </div>
+      </footer>
+
+</body>
+</html>

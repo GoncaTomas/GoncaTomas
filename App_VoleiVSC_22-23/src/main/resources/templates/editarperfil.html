@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Perfil</title>
+  <link rel="stylesheet" href="../css/editarperfil.css">
+</head>
+<body>
+
+<header>
+  <div class="lado-esquerdo">
+    <img class="logo-vitoria" src="../images/Logo-Vitoria.png">
+  </div>
+</header>
+
+<div>
+  <div class="texto-adicionar">
+    <h1 class="texto">Editar Perfil</h1>
+  </div>
+
+
+  <form class="corpo-central" action="/perfil/editarperfil" method="post" >
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" value="" required>
+    </div>
+      <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" value="" required>
+    </div>
+      <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="" required>
+    </div>
+    <div>
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" value="" required>
+    </div>
+
+    <div class="botao-pai">
+      <button class="botao-submit" type="submit">Salvar</button>
+      <button class="button-cancelar" type="button" onclick="window.location.href='/perfil'">Cancelar</button>
+
+    </div>
+
+  </form>
+
+  <footer>
+    <div class="rodape">
+      
+    </div>
+  </footer>
+</div>
+</body>
+</html>
